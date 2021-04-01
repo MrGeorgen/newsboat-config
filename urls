@@ -1,0 +1,9 @@
+# Video
+https://videos.lukesmith.xyz/feeds/videos.atom?videoChannelId=2 video
+# mentaloutlaw https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA video
+
+# git
+http://localhost:10992/index.php?action=display&bridge=GithubIssue&context=Project+Issues&c=on&u=themoonisacheese&p=2bored2wait&format=Atom git
+filter:~/.newsboat/github-issue-search:https://github.com/search?o=desc&q=involves%3AMrGeorgen+is%3Aissue&s=updated&type=Issues git "~Github Issues"
+filter:~/.newsboat/github-pullrequest-search:https://github.com/search?o=desc&q=involves%3AMrGeorgen+is%3Apr&s=updated&type=Issues git "~Github Pull requests"
+http://localhost:10992/index.php?action=display&bridge=GithubPullRequest&context=Project+Pull+Requests&c=on&u=themoonisacheese&p=2bored2wait&format=Atom git

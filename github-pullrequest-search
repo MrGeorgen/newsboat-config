@@ -1,0 +1,3 @@
+#!/bin/sh
+feeds=`grep -Po '(?<=href=")[^"]*' < /dev/stdin |uniq -u |grep -vf ~/.newsboat/github-issue-exclude |awk -F / '{ if($4 == "pull") { printf "%s", "&f=http%3A%2F%2Flocalhost%3A10992%2Findex.php%3Faction%3Ddisplay%26bridge%3DGithubPullRequest%26context%3DPull%2BRequest%2Bcomments%26i%3D"$5"%26u%3D"$2"%26p%3D"$3"%26format%3DAtom"} }'`
+curl -s "http://localhost:8000/atom?n=0$feeds"
